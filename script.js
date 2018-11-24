@@ -77,13 +77,13 @@ function wybor(x) {
         
         if(puste_pola==0){
             zwycieztwo=1;
-            konsola = ('<p>nikt nie wygrał wcisnij restart</p>') + konsola;
+            konsola = ('<p>Nobody win, press Clear</p>') + konsola;
             $('#konsola').html(konsola);
         }
         
     } else {
         if(zwycieztwo==0){
-        konsola = ('<p>przeciez w polu ' + x + ' jest znak ' + $('#pole'+x).html() + '</p>') + konsola;
+        konsola = ('<p>in field ' + x + ' is ' + $('#pole'+x).html() + '</p>') + konsola;
         $('#konsola').html(konsola);
         }
     }
@@ -120,7 +120,7 @@ function wygrana(co,gdzie) {
     
     if(znak=="x") znak="o"; else znak="x";
     
-    konsola = ('<p>wygrywa ' +znak+'</p>') + konsola;
+    konsola = ('<p>wins ' +znak+'</p>') + konsola;
     $('#konsola').html(konsola);
     
     if(znak=="x") znak="o"; else znak="x";
@@ -175,7 +175,7 @@ function clean() {
     
     if(znak=="x") znak="o"; else znak="x";
     
-    konsola = ('<p>teraz gra znak '+znak+'</p>') + konsola;
+    konsola = ('<p>now playing: '+znak+'</p>') + konsola;
     $('#konsola').html(konsola);
     
     for (x=0;x<9;x++)
@@ -193,10 +193,10 @@ function bot_switch() {
     if(bot_toggle==0)
     {
         bot_toggle=1;
-        $('#bot_toggle').html('wyłącz bota');
+        $('#bot_toggle').html('P1 vs P2');
     } else {
         bot_toggle=0;
-        $('#bot_toggle').html('włącz bota');
+        $('#bot_toggle').html('Player vs PC');
     }
     if(bot_toggle==1&&znak=="o")bot_play();
     
