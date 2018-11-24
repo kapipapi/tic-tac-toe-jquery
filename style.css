@@ -1,0 +1,22 @@
+#plansza {
+    display: inline-block;
+    width: 618px;
+    float: left;
+}
+
+.pole {
+    background-color: #eee;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #cfcfcf;
+    font-size: 200px;
+}
+
+#konsola {
+    min-height: 0px;
+    max-height: 400px;
+    overflow:hidden;
+}
