@@ -8,7 +8,7 @@ let zajete = [];
 let zwycieztwo = false;
 let puste_pola = 9;
 let bot_toggle = 0;
-let konsola = "";
+let konsola = ""; //
 
 function start() {
     stworz();
